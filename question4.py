@@ -3,17 +3,17 @@
 num1 = int(input("Enter first value: "))
 num2 = int(input("Enter second value: "))
 
-# TODO: Input operation
 operation = input("Enter operation (+, -, *, /, %, **): ")
-# TODO: Match operation using if-elif
+
 if operation == "+":
   print(num1 + num2)
 elif operation == "-":
    print(num1 - num2)
 elif operation == "*":
   print(num1 * num2)
+
 elif operation == "%":
-  try:
+  try: 
    modulus = num1%num2
    print(modulus)
   except ZeroDivisionError:
@@ -21,8 +21,8 @@ elif operation == "%":
 
 elif operation == "/":
   try:
-   result = num1/num2
-   print(result)
+   division = num1/num2
+   print(division)
   except ValueError:
    print("Invalid input")
   except ZeroDivisionError:
